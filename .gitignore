@@ -1,0 +1,6 @@
+.idea/
+bin/
+obj/
+GemPower.sln.DotSettings.user
+/thunderstore/BepInEx/plugins/GemPower/GemPower.dll
+/thunderstore/*.zip
