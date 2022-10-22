@@ -2,17 +2,17 @@
 
 namespace GemPower
 {
-    [BepInPlugin(pluginGUID, pluginName, pluginVersion)]
+    [BepInPlugin(PluginGuid, PluginName, PluginVersion)]
     [BepInDependency("org.bepinex.plugins.jewelcrafting", BepInDependency.DependencyFlags.SoftDependency)]
     public class GemPower : BaseUnityPlugin
     {
-    private const string pluginGUID = "com.comoyi.valheim.GemPower";
-    private const string pluginName = "GemPower";
-    private const string pluginVersion = "1.0.1";
+    private const string PluginGuid = "com.comoyi.valheim.GemPower";
+    private const string PluginName = "GemPower";
+    private const string PluginVersion = "1.0.1";
     
         private void Awake()
         {
-            Logger.LogInfo($"Plugin {pluginName}-{pluginVersion} is loaded!");
+            Logger.LogInfo($"Plugin {PluginName}-{PluginVersion} is loaded!");
         }
     }
 }
