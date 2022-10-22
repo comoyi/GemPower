@@ -3,7 +3,7 @@
 namespace GemPower
 {
     [BepInPlugin(PluginInfo.PLUGIN_GUID, PluginInfo.PLUGIN_NAME, PluginInfo.PLUGIN_VERSION)]
-    public class Plugin : BaseUnityPlugin
+    public class GemPower : BaseUnityPlugin
     {
         private void Awake()
         {

@@ -25,4 +25,8 @@
             <HintPath>..\Libs\assembly_valheim.dll</HintPath>
         </Reference>
     </ItemGroup>
+
+    <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+        <Exec Command="Xcopy &quot;$(OutDir)GemPower.dll&quot; &quot;$(SolutionDir)thunderstore\BepInEx\plugins\GemPower\&quot; /Y&#xA;Xcopy &quot;$(OutDir)GemPower.dll&quot; &quot;C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\plugins\GemPower\&quot; /Y" />
+    </Target>
 </Project>
